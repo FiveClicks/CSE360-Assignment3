@@ -13,23 +13,40 @@ public class CalculatorTest {
 	}
 
 	public void testgetTotal() {
-		fail("Not yet implemented");
+		Calculator calc = new Calculator();
+		assertEquals(0, calc.getTotal());
 	}
 	
 	public void testAdd() {
-		fail("Not yet implemented");
+		Calculator calc = new Calculator();
+		calc.add(3);
+		assertEquals(3, calc.getTotal());
 	}
 	
 	public void testSubtract() {
-		fail("Not yet implemented");
+		Calculator calc = new Calculator();
+		calc.subtract(5);
+		assertEquals(-5, calc.getTotal());
 	}
 	
 	public void testMultiply() {
-		fail("Not yet implemented");
+		Calculator calc = new Calculator();
+		calc.add(10);
+		calc.multiply(5);
+		assertEquals(2, calc.getTotal());
 	}
 	
 	public void testDivide() {
-		fail("Not yet implemented");
+		Calculator calc = new Calculator();
+		calc.add(8);
+		calc.divide(2);
+		assertEquals(4, calc.getTotal());
+	}
+	
+	public void testDividebyZero() {
+		Calculator calc = new Calculator();
+		calc.divide(0);
+		assertEquals(0, calc.getTotal());
 	}
 	
 	public void testGetHistory() {

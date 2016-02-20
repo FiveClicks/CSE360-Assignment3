@@ -13,33 +13,46 @@ public class Calculator {
 	private int total;
 	
 	// Constructor for the calculator class.
-	public Calculator () {
+	public Calculator ()
+	{
 		total = 0;  // not needed - included for clarity
 	}
 	
 	// returns the total of the calculator
-	public int getTotal () {
-		return 0;
+	public int getTotal () 
+	{
+		return total;
 	}
 	
 	//Performs the add function of a calculator
-	public void add (int value) {
-		
+	public void add (int value) 
+	{
+		total = total + value;
 	}
 	
 	//performs the subtract function of a calculator
-	public void subtract (int value) {
-		
+	public void subtract (int value) 
+	{
+		total = total - value;
 	}
 	
 	//performs the multiply function of a calculator
-	public void multiply (int value) {
-		
+	public void multiply (int value) 
+	{
+		total = total * value;
 	}
 	
 	//performs the divide function of a calculator
-	public void divide (int value) {
-		
+	public void divide (int value) 
+	{
+		if (value == 0)
+		{
+			total = 0;
+		}
+		else
+		{
+			total = total / value;	
+		}
 	}
 	
 	//Returns the history of the calculator
